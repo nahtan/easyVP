@@ -1,6 +1,28 @@
-easyVP
+# easyVP
 
-Create annotated volcano plots with colored dots
+# What is easyVP
+
+**easyVP** lets you create annotated volcano plots with colored dots
+
+# Installation
+
+The package can be installed with
+
+```r
+install_github("nahtan/easyVP")
+```
+
+After installation, the package can be loaded into R.
+
+    library(easyVP)
+
+# Using easyVP
+
+The main function in the **easyVP** package is `easyVP()`.
+
+See example below.
+
+# Parameters
 
 @param DEGlist limma output. List of differentially expressed features with mandatory columns: logFC, P.Value, adj.P.Val, GeneID
 
@@ -18,20 +40,13 @@ Create annotated volcano plots with colored dots
 
 @param LegendPlace a place to choose for legend between "topleft", "topright", "bottomright", "bottomleft".
 
-@keywords 
 
-@export
-
-@examples
-
+# Example
+```r
 MyDEGs <- read.csv2(file="~/MyStudy/MyDEGs.csv", header=T, sep=";",dec=".", row.names=1)
-
 colnames(MyDEGs)[1] <-"logFC"
-
 colnames(MyDEGs)[4] <-"P.Value"
-
 colnames(MyDEGs)[5] <-"adj.P.Val"
-
 colnames(MyDEGs)[8] <-"GeneID"
-
 easyVP(DEGlist=MyDEGs,main="My easy VP", FCcol1=0.5, FCcol2=1, FCcol3=2, FClimit=2, PVALlimit=5, LegendPlace="topright")
+```
