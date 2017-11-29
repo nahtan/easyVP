@@ -24,21 +24,21 @@ See example below.
 
 # Parameters
 
-@param DEGlist limma output. List of differentially expressed features with mandatory columns: logFC, P.Value, adj.P.Val, GeneID
+**DEGlist** limma output. List of differentially expressed features with mandatory columns: logFC, P.Value, adj.P.Val, GeneID
 
-@param main a title for your plot.
+**main** a title for your plot.
 
-@param FCcol1 a first logFC threshold for key color.
+**FCcol1** a first logFC threshold for key color.
 
-@param FCcol2 a second logFC threshold for key color.
+**FCcol2** a second logFC threshold for key color.
 
-@param FCcol3 a third logFC threshold for key color.
+**FCcol3** a third logFC threshold for key color.
 
-@param FClimit a logFC threshold beyond which dots are annotated with GeneID.
+**FClimit** a logFC threshold beyond which dots are annotated with GeneID.
 
-@param PVALlimit a -log10(P.Value) threshold beyond which dots are annotated with GeneID. Must be -log10(P.Value) and notP.Value or adj.P.Val.
+**PVALlimit** a -log10(P.Value) threshold beyond which dots are annotated with GeneID. Must be -log10(P.Value) and notP.Value or adj.P.Val.
 
-@param LegendPlace a place to choose for legend between "topleft", "topright", "bottomright", "bottomleft".
+**LegendPlace** a place to choose for legend between "topleft", "topright", "bottomright", "bottomleft".
 
 
 # Example
