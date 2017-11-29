@@ -1,6 +1,6 @@
 # easyVP
 
-# What is easyVP
+### What is easyVP
 
 **easyVP** lets you create annotated volcano plots with colored dots
 
